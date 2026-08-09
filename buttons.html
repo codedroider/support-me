@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate Buttons</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: transparent !important;
+      overflow: hidden;
+    }
+
+    .iframe-wrapper {
+      padding: 10px;
+    }
+
+    .buttons-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+      max-width: 320px;
+      margin: 0 auto;
+    }
+
+    .donate-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      color: #ffffff;
+      text-decoration: none;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 12px 24px;
+      border-radius: 16px;
+      transition: all 0.2s ease-in-out;
+      width: 100%;
+      box-sizing: border-box;
+      user-select: none;
+    }
+
+    .btn-yoomoney {
+      background-color: #8b3ffd;
+      box-shadow: 0 4px 20px rgba(139, 63, 253, 0.4);
+    }
+    .btn-yoomoney:hover {
+      background-color: #762de6;
+      box-shadow: 0 6px 25px rgba(139, 63, 253, 0.6);
+    }
+
+    .btn-boosty {
+      background-color: #ff5600;
+      box-shadow: 0 4px 20px rgba(255, 86, 0, 0.4);
+    }
+    .btn-boosty:hover {
+      background-color: #e64d00;
+      box-shadow: 0 6px 25px rgba(255, 86, 0, 0.6);
+    }
+    
+    .donate-btn:active {
+      transform: scale(0.97);
+    }
+
+    .round-img {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      object-fit: cover;
+      background-color: #ffffff;
+      display: block;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="iframe-wrapper">
+    <div class="buttons-grid">
+      
+      <a href="https://yoomoney.ru/to/4100119551388115/0?github=true?user=codedroider?repo=support-me" target="_top" class="donate-btn btn-yoomoney">
+        <img src="ym.png" alt="ЮMoney" class="round-img" />
+        <span>Автору на безделушки</span>
+      </a>
+
+      <a href="https://boosty.to/codedroider/donate?github=true?user=codedroider?repo=support-me" target="_top" class="donate-btn btn-boosty">
+        <img src="boosty.png" alt="Boosty" class="round-img" />
+        <span>Автору на мечту :)</span>
+      </a>
+
+    </div>
+  </div>
+
+</body>
+</html>
